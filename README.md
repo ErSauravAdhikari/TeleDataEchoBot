@@ -1,12 +1,12 @@
 # TeleDataEchoBot
 
-It is a simple telegram bot that returns the data recieved from user.
+It is a simple telegram bot that returns the data received from user.
 
 ## Commands
 - /userid Reurns user's effective user id
 - /help Returns help message
 - /start Returns start message
-- /json Echo backs complete JSON that is recieved
+- /json Echo backs complete JSON that is received
 
 ## Usage
 Fork this repo and then deploy it to Heroku.

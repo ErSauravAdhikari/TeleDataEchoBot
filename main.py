@@ -12,18 +12,15 @@ def get_full_json(update: Update, context: CallbackContext) -> None:
 
 
 def get_start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(f"""
-/userid Reurns user's effective user id
-/help [/start] Returns this message
-/json Echo backs complete JSON that is recieved
-
-Hello, I am Saurav Adhikari. The Creator of this BOT.
-How about you give me some stars and follows at github, it would definately help my vanity. 
+    reply_text = "/userid Reurns user's effective user id\n"
+    reply_text += "/help [/start] Returns this message\n"
+    reply_text += "/json Echo backs complete JSON that is recieved\n"
+    reply_text += "\n\n"
+    reply_text += "Hello, I am Saurav Adhikari. The Creator of this BOT.\n"
+    reply_text += "How about you give me some stars and follows at github, it would definately help my vanity.\n"
+    reply_text += "https://github.com/ersauravadhikari/\n🤣🤣🤣"
     
-https://github.com/ersauravadhikari/
-
-🤣🤣🤣
-    """)
+    update.message.reply_text(reply_text)
 
 
 def main():
