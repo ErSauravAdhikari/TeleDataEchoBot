@@ -3,7 +3,6 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 
-
 def get_user_id(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(f'Your User ID is: {update.effective_user.id}')
 
